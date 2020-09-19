@@ -1,0 +1,74 @@
+$primary-font: 'Poppins', sans-serif;
+$color-1: #d58432;
+$color-2: #4876FF;
+$white: #fff;
+$black: #000;
+$darkgrey: #333;
+$grey: #E8E8E8;
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: $darkgrey;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+    text-decoration: underline; 
+  }
+  &:visited {
+    color: $grey;
+  }
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid $darkgrey;
+  border-radius: 2px;
+}
+
+input {
+    &:disabled {
+        color: $grey;
+    }
+}
+
+button {
+  color: $white;
+  background-color: $color-2;
+  outline: none;
+  padding: 1em 2em 1em 2em;
+  border-color: $color-2;
+  font-weight: 700;
+  font-size: 1em;
+
+  &:disabled {
+    color: $white;
+    background-color: $grey;
+    border-color: $grey;
+  }
+
+}
