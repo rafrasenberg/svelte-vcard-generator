@@ -76,7 +76,7 @@
     };
 
     if(localStorage.getItem("values")) localStorage.removeItem("values");
-
+    dispatch("createQRCode", false);
     firstInput.focus();
   }
 
